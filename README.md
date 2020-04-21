@@ -1,2 +1,2 @@
 # zeevector
-Quick and dirty vectors for creative coding.
+Quick and dirty vector class for creative coding.
