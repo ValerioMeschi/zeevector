@@ -118,7 +118,9 @@ class ZVector {
     }
     random() {
         //randomizes the vector into a 
-        this.x
+        this.x = 1 - Math.random() * 2;
+        this.y = 1 - Math.random() * 2;
+        this.normalize();
     }
     normalize() {
         //normalizes the vector to a magnitude of 1 aka a "unit vector".
@@ -151,3 +153,8 @@ class ZVector {
         return c.getMag();
     }
 }
+
+let v = new ZVector();
+v.random();
+console.log(v.toString());
+console.log(v.getMag());
